@@ -1,0 +1,24 @@
+{
+  "name": "app_backend",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martin-Mutua/TeamWork.git"
+  },
+  "author": "Martin Mutua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martin-Mutua/TeamWork/issues"
+  },
+  "homepage": "https://github.com/Martin-Mutua/TeamWork#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "pg": "*"
+  }
+}
