@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 
 // Connection to database
-const connect = "postgres://teamwork_webapp:vFthQTXfkSHMA8K7@localhost/teamworkdb";
+const connect = "postgres://<dbuser>:<password>@<hostname>/<database_name>";
 
 const pool = new Pool ({
     connectionString: connect,
