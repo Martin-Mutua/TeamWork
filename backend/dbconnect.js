@@ -5,7 +5,12 @@ const connect = "postgres://teamwork_webapp:vFthQTXfkSHMA8K7@localhost/teamworkd
 
 const pool = new Pool ({
     connectionString: connect,
+    max: 15,
+    min: 0,
+    idle: 10000,
+    acquire: 30000
 })
+
 
 dbconnect = () => {
     pool.query('SELECT NOW ()')
@@ -15,9 +20,11 @@ dbconnect = () => {
         }
     ).catch(
         (err) => {
-            console.log(e.stack)
+            console.log(err.stack)
         }
     );
 }
+
+
 
 module.exports = { pool, dbconnect };
